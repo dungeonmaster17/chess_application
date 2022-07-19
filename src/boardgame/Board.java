@@ -25,4 +25,10 @@ public class Board {
 	public void setCols(Integer cols) {
 		this.cols = cols;
 	}
+	public Piece piece(Integer row, Integer col) {
+		return pieces[row][col];
+	}
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getCol()];
+	}
 }
